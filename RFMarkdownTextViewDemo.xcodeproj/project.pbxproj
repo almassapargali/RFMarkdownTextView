@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE041EFF1852A74100F79297 /* RFMarkdownSyntaxStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE041EFE1852A74100F79297 /* RFMarkdownSyntaxStorage.m */; };
-		CEEF0E7D184EA3FE00B7DEDF /* RFMarkdownTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF0E7C184EA3FE00B7DEDF /* RFMarkdownTextView.m */; };
+		B633F17B1862457E003AE5E2 /* RFMarkdownSyntaxStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B633F1781862457E003AE5E2 /* RFMarkdownSyntaxStorage.m */; };
+		B633F17C1862457E003AE5E2 /* RFMarkdownTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B633F17A1862457E003AE5E2 /* RFMarkdownTextView.m */; };
 		F1737117184C2F5500422999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1737116184C2F5500422999 /* Foundation.framework */; };
 		F1737119184C2F5500422999 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1737118184C2F5500422999 /* CoreGraphics.framework */; };
 		F173711B184C2F5500422999 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F173711A184C2F5500422999 /* UIKit.framework */; };
@@ -35,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE041EFD1852A74100F79297 /* RFMarkdownSyntaxStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMarkdownSyntaxStorage.h; sourceTree = "<group>"; };
-		CE041EFE1852A74100F79297 /* RFMarkdownSyntaxStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMarkdownSyntaxStorage.m; sourceTree = "<group>"; };
-		CEEF0E7B184EA3FE00B7DEDF /* RFMarkdownTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMarkdownTextView.h; sourceTree = "<group>"; };
-		CEEF0E7C184EA3FE00B7DEDF /* RFMarkdownTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMarkdownTextView.m; sourceTree = "<group>"; };
+		B633F1771862457E003AE5E2 /* RFMarkdownSyntaxStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMarkdownSyntaxStorage.h; sourceTree = "<group>"; };
+		B633F1781862457E003AE5E2 /* RFMarkdownSyntaxStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMarkdownSyntaxStorage.m; sourceTree = "<group>"; };
+		B633F1791862457E003AE5E2 /* RFMarkdownTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMarkdownTextView.h; sourceTree = "<group>"; };
+		B633F17A1862457E003AE5E2 /* RFMarkdownTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMarkdownTextView.m; sourceTree = "<group>"; };
 		F1737113184C2F5500422999 /* RFMarkdownTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFMarkdownTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1737116184C2F5500422999 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1737118184C2F5500422999 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,21 +83,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEEF0E7A184EA3FE00B7DEDF /* RFMarkdownTextView */ = {
+		B633F1761862457E003AE5E2 /* RFMarkdownTextView */ = {
 			isa = PBXGroup;
 			children = (
-				CEEF0E7B184EA3FE00B7DEDF /* RFMarkdownTextView.h */,
-				CEEF0E7C184EA3FE00B7DEDF /* RFMarkdownTextView.m */,
-				CE041EFD1852A74100F79297 /* RFMarkdownSyntaxStorage.h */,
-				CE041EFE1852A74100F79297 /* RFMarkdownSyntaxStorage.m */,
+				B633F1771862457E003AE5E2 /* RFMarkdownSyntaxStorage.h */,
+				B633F1781862457E003AE5E2 /* RFMarkdownSyntaxStorage.m */,
+				B633F1791862457E003AE5E2 /* RFMarkdownTextView.h */,
+				B633F17A1862457E003AE5E2 /* RFMarkdownTextView.m */,
 			);
-			name = RFMarkdownTextView;
-			path = ../../RFMarkdownTextView;
+			path = RFMarkdownTextView;
 			sourceTree = "<group>";
 		};
 		F173710A184C2F5500422999 = {
 			isa = PBXGroup;
 			children = (
+				B633F1761862457E003AE5E2 /* RFMarkdownTextView */,
 				F173711C184C2F5500422999 /* RFMarkdownTextViewDemo */,
 				F1737135184C2F5500422999 /* RFMarkdownTextViewDemoTests */,
 				F1737115184C2F5500422999 /* Frameworks */,
@@ -133,7 +133,6 @@
 				F1737145184C2F7600422999 /* ViewController.h */,
 				F1737146184C2F7600422999 /* ViewController.m */,
 				F1737128184C2F5500422999 /* Images.xcassets */,
-				CEEF0E7A184EA3FE00B7DEDF /* RFMarkdownTextView */,
 				F173711D184C2F5500422999 /* Supporting Files */,
 			);
 			path = RFMarkdownTextViewDemo;
@@ -264,10 +263,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1737147184C2F7600422999 /* ViewController.m in Sources */,
-				CE041EFF1852A74100F79297 /* RFMarkdownSyntaxStorage.m in Sources */,
+				B633F17C1862457E003AE5E2 /* RFMarkdownTextView.m in Sources */,
 				F1737127184C2F5500422999 /* AppDelegate.m in Sources */,
-				CEEF0E7D184EA3FE00B7DEDF /* RFMarkdownTextView.m in Sources */,
 				F1737123184C2F5500422999 /* main.m in Sources */,
+				B633F17B1862457E003AE5E2 /* RFMarkdownSyntaxStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
