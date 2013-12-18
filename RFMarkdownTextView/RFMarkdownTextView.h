@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RFKeyboardToolbar.h"
-#import "RFMarkdownButtons.h"
 #import "RFMarkdownSyntaxStorage.h"
 
 @interface RFMarkdownTextView : UITextView <UITextViewDelegate>

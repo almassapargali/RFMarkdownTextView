@@ -35,24 +35,8 @@
     self = [super initWithFrame:frame textContainer:container];
     if (self) {
         self.delegate = self;
-        [RFKeyboardToolbar addToTextView:self withButtons:[self buttons]];
     }
     return self;
-}
-
-- (NSArray*)buttons {
-    RFHeaderToolbarButton *headerButton = [RFHeaderToolbarButton new];
-    RFAsteriskToolbarButton *asteriskButton = [RFAsteriskToolbarButton new];
-    RFUnderscoreToolbarButton *underscoreButton = [RFUnderscoreToolbarButton new];
-    RFCodeToolbarButton *codeButton = [RFCodeToolbarButton new];
-    RFAtToolbarButton *atButton = [RFAtToolbarButton new];
-    RFLinkToolbarButton *linkButton = [RFLinkToolbarButton new];
-    RFCodeblockToolbarButton *codeblockButton = [RFCodeblockToolbarButton new];
-    RFImageToolbarButton *imageButton = [RFImageToolbarButton new];
-    RFTaskToolbarButton *taskButton = [RFTaskToolbarButton new];
-    RFQuoteToolbarButton *quoteButton = [RFQuoteToolbarButton new];
-    
-    return @[headerButton,asteriskButton,underscoreButton,codeButton,atButton,linkButton,codeblockButton,imageButton, taskButton, quoteButton];
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
