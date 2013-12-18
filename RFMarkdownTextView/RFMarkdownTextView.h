@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RFMarkdownSyntaxStorage.h"
 
-@interface RFMarkdownTextView : UITextView <UITextViewDelegate>
+@interface RFMarkdownTextView : UITextView
 
 @end

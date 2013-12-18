@@ -34,13 +34,21 @@
     
     self = [super initWithFrame:frame textContainer:container];
     if (self) {
-        self.delegate = self;
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(rfmtv_textViewDidChangeNotification:)
+                                                     name:UITextViewTextDidChangeNotification
+                                                   object:self];
     }
     return self;
 }
 
-- (void)textViewDidChange:(UITextView *)textView {
+- (void)rfmtv_textViewDidChangeNotification:(NSNotification *)notification {
     [_syntaxStorage update];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
